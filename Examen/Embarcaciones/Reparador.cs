@@ -1,4 +1,5 @@
 ﻿using System;
+using Examen.Enums;
 using Examen.Interfaces;
 
 namespace Examen.Embarcaciones
@@ -7,8 +8,11 @@ namespace Examen.Embarcaciones
     {
         public class Portaaviones : Embarcacion, SpecialAttack
         {
-            public Portaaviones()
+            public Portaaviones(Orientation O, int DesiredX, int DesiredY)
             {
+                ActualCentreX = DesiredX;
+                ActualCentreY = DesiredY;
+                Orientation = O;
                 Lives = 4;
             }
 

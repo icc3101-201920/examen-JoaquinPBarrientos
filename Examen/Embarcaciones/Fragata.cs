@@ -1,28 +1,26 @@
 ﻿using System;
+using Examen.Enums;
+
 namespace Examen.Embarcaciones
 {
     public class Fragata : Embarcacion
     {
 
-        public Fragata()
+        public Fragata(Orientation O,int DesiredX,int DesiredY)
         {
-            Lives = 4;
+            ActualCentreX = DesiredX;
+            ActualCentreY = DesiredY;
+            Orientation = O;
+            Lives = 2;
         }
 
         public void Attack()
         {
+
         }
 
         public void Move(string X, string Y)
-        {
-            const int maxMovePosition = 2;
-
-            int desiredPositionX = Int32.Parse(X);
-            int desiredPositionY = Int32.Parse(Y);
-            int ActualPositionX = ActualCentreX;
-            int ActualPositionY = ActualCentreY;
-
-
+        { 
         }
 
     }
