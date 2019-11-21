@@ -6,12 +6,13 @@ namespace Examen.Embarcaciones
 {
     public class Portaaviones : Embarcacion, SpecialAttack
     {
-        public Portaaviones(Orientation O, int DesiredX, int DesiredY)
+        public Portaaviones(Orientation O, int DesiredX, int DesiredY, Player idPlayer)
         {   
             Lives = 5;
             ActualCentreX = DesiredX;
             ActualCentreY = DesiredY;
             Orientation = O;
+            IdPlayer = idPlayer;
         }
 
         public void Attack()

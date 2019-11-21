@@ -6,12 +6,13 @@ namespace Examen.Embarcaciones
 {
     public class Radar : Embarcacion, SpecialAttack
     {
-        public Radar(Orientation O, int DesiredX, int DesiredY)
+        public Radar(Orientation O, int DesiredX, int DesiredY, Player idPlayer)
         {
             Lives = 1;
             ActualCentreX = DesiredX;
             ActualCentreY = DesiredY;
             Orientation = O;
+            IdPlayer = idPlayer;
         }
 
         public void Attack()

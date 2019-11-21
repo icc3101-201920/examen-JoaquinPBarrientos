@@ -6,12 +6,13 @@ namespace Examen.Embarcaciones
     public class Fragata : Embarcacion
     {
 
-        public Fragata(Orientation O,int DesiredX,int DesiredY)
+        public Fragata(Orientation O,int DesiredX,int DesiredY,Player idPlayer)
         {
             ActualCentreX = DesiredX;
             ActualCentreY = DesiredY;
             Orientation = O;
             Lives = 2;
+            IdPlayer = idPlayer;
         }
 
         public void Attack()

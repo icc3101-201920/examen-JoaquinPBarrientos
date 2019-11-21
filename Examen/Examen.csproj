@@ -41,8 +41,7 @@
     <Compile Include="Embarcaciones\Radar.cs" />
     <Compile Include="Board.cs" />
     <Compile Include="Enums\Orientation.cs" />
-    <Compile Include="Game.cs" />
-    <Compile Include="Player.cs" />
+    <Compile Include="Enums\Player.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Embarcaciones\" />

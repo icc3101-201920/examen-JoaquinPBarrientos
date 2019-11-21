@@ -11,6 +11,7 @@ namespace Examen.Embarcaciones
         private int lives;
         private Orientation orientation;
         private int idOnBoard;
+        private Player idPlayer;
 
         public void Attack() { }
 
@@ -38,7 +39,7 @@ namespace Examen.Embarcaciones
         public Orientation Orientation
         {
             get => orientation;
-            set =>  orientation = value;
+            set => orientation = value;
         }
 
         public int IdOnBoard
@@ -47,5 +48,10 @@ namespace Examen.Embarcaciones
             set => idOnBoard = value;
         }
 
+        public Player IdPlayer
+        {
+            get => idPlayer;
+            set => idPlayer = value;
+        }
     }
 }
